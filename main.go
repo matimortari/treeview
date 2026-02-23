@@ -36,15 +36,9 @@ func printTree(basePath, indent string, exclude map[string]bool) {
 		return
 	}
 
-	// Filter + sort: directories first, then files
 	var filtered []os.DirEntry
 	for _, entry := range entries {
 		if exclude[entry.Name()] {
-			continue
-		}
-
-		name := entry.Name()
-		if len(name) > 0 && name[0] == '.' {
 			continue
 		}
 

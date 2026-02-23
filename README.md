@@ -8,7 +8,6 @@ A simple CLI utility written in Go that displays a directory tree structure, exc
 - Recursively prints directory structure
 - Directories listed before files
 - Alphabetically sorted
-- Ignores dot-prefixed hidden files and folders
 - Excludes common clutter folders:
   - node_modules
   - .git
